@@ -31,6 +31,12 @@
   .tag{width:44px;height:26px;border-radius:8px;color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center;}
   .row p{margin:0;font-size:15px;line-height:1.55;color:#2a2a3a;padding-top:2px;}
   .row p b{color:#d4380d;}
+  .time{display:inline-block;background:#eef2ff;color:#1f5cff;font-weight:800;font-size:13px;border-radius:6px;padding:1px 7px;margin-right:6px;}
+  .note{display:block;margin-top:5px;font-size:12.5px;color:#8a8a9a;line-height:1.55;}
+  .note b{color:#d4380d;}
+  .dayalert{display:flex;align-items:center;gap:8px;padding:9px 16px;background:linear-gradient(90deg,#fff1f0,#ffe9e9);border-bottom:1px solid #ffd6d6;color:#d4380d;font-size:14px;font-weight:800;}
+  .ab{background:#ff4d4f;color:#fff;font-size:11px;font-weight:800;border-radius:5px;padding:2px 6px;letter-spacing:.5px;}
+  .mtitle{font-size:12px;color:#a0a6b5;display:block;margin-top:3px;}
 
   .t-ren{background:#2f6bff;} .t-huo{background:#00a870;} .t-chang{background:#ff7a45;}
   .t-jiang{background:#d4a106;} .t-cu{background:#ff4d4f;} .t-pei{background:#722ed1;}
@@ -66,6 +72,10 @@
     .row{grid-template-columns:38px 1fr;gap:8px;}
     .tag{width:38px;height:23px;font-size:12px;}
     .row p{font-size:13.5px;}
+    .time{font-size:12px;padding:1px 6px;}
+    .note{font-size:12px;}
+    .mtitle{font-size:11.5px;}
+    .dayalert{padding:8px 12px;font-size:12.5px;}
     .pending{margin:14px 16px 0;padding:12px;}
     .pending .ph{font-size:13px;}
     .grid{grid-template-columns:repeat(3,1fr);}
@@ -127,11 +137,23 @@
   <section class='day'>
     <div class='dayhead'>
       <span class='dnum'>9月24日</span><span class='dwk'>周四</span>
-      <span class='dtitle'>直播会 + 大区双节启动会</span>
+      <span class='dtitle'>双会线上参会 · 现金抽奖今日截止</span>
     </div>
+    <div class='dayalert'><span class='ab'>今日截止</span>最高 2088 元现金抽奖 · 9月24日截止，请务必提醒全员完成</div>
     <div class='rows'>
-      <div class='row'><span class='tag t-am'>上午</span><p>参加 <b>Tiger 直播会</b></p></div>
-      <div class='row'><span class='tag t-am'>下午</span><p>参加<b>华南大区中秋&amp;国庆双节启动会</b></p></div>
+      <div class='row'>
+        <span class='tag t-am'>上午</span>
+        <p><span class='time'>09:00-10:15</span><b>Tiger 直播会</b>
+          <span class='mtitle'>主题：奋战百日齐发力，全力以赴冲百万</span>
+          <span class='note'>全员线上参加；<b>关键岗位人员须使用本人新能源企微账号登录观看直播</b>（勿用他人账号 / 个人微信）</span>
+        </p>
+      </div>
+      <div class='row'>
+        <span class='tag t-am'>下午</span>
+        <p><span class='time'>14:30-15:30</span><b>华南中秋 &amp; 十一作战动员大会</b>
+          <span class='note'>全员线上参加，提前 5 分钟进会，会议期间保持在线</span>
+        </p>
+      </div>
     </div>
   </section>
 
